@@ -1,0 +1,273 @@
+#1
+#include <stdio.h>
+
+void calculateSalePrice() {
+    float originalPrice = 200000, discount = 0.10, salePrice;
+    salePrice = originalPrice - (originalPrice * discount);
+    printf("Total sale price: UGX %.2f\n", salePrice);
+}
+
+int main() {
+    calculateSalePrice();
+    return 0;
+}
+#2
+#include <stdio.h>
+
+void calculateFinalSalary() {
+    float originalSalary = 5000000, taxRate = 0.15, finalSalary;
+    finalSalary = originalSalary - (originalSalary * taxRate);
+    printf("Final salary after tax: UGX %.2f\n", finalSalary);
+}
+
+int main() {
+    calculateFinalSalary();
+    return 0;
+}
+#3
+#include <stdio.h>
+
+void calculateGrossProfit() {
+    float salesRevenue = 15000000, cogs = 9000000, grossProfit;
+    grossProfit = salesRevenue - cogs;
+    printf("Gross profit: UGX %.2f\n", grossProfit);
+}
+
+int main() {
+    calculateGrossProfit();
+    return 0;
+}
+#4
+#include <stdio.h>
+
+void calculateROI() {
+    float investment = 10000000, profit = 12000000, roi;
+    roi = ((profit - investment) / investment) * 100;
+    printf("ROI: %.2f%%\n", roi);
+}
+
+int main() {
+    calculateROI();
+    return 0;
+}
+#5
+#include <stdio.h>
+#include <math.h>
+
+void calculateLoanPayment() {
+    float principal = 50000000, annualRate = 0.05, monthlyRate, months = 60, monthlyPayment;
+    monthlyRate = annualRate / 12;
+    monthlyPayment = (principal * monthlyRate * pow(1 + monthlyRate, months)) / (pow(1 + monthlyRate, months) - 1);
+    printf("Monthly loan payment: UGX %.2f\n", monthlyPayment);
+}
+
+int main() {
+    calculateLoanPayment();
+    return 0;
+}
+#6
+#include <stdio.h>
+
+void calculateSimpleInterest() {
+    float principal = 2000000, rate = 6, time = 3, interest;
+    interest = (principal * rate * time) / 100;
+    printf("Simple Interest: UGX %.2f\n", interest);
+}
+
+int main() {
+    calculateSimpleInterest();
+    return 0;
+}
+#7
+#include <stdio.h>
+
+void calculateBreakEvenPoint() {
+    float fixedCosts = 10000000, variableCostPerUnit = 50000, pricePerUnit = 100000, breakEvenPoint;
+    breakEvenPoint = fixedCosts / (pricePerUnit - variableCostPerUnit);
+    printf("Break-even point: %.2f units\n", breakEvenPoint);
+}
+
+int main() {
+    calculateBreakEvenPoint();
+    return 0;
+}
+#8
+#include <stdio.h>
+
+void calculateFlatInterest() {
+    float investment = 1000000, time = 2, rate = 0.04, flatInterest;
+    flatInterest = investment * time * rate;
+    printf("Flat Interest: UGX %.2f\n", flatInterest);
+}
+
+int main() {
+    calculateFlatInterest();
+    return 0;
+}
+#9
+#include <stdio.h>
+
+void calculateProfitMargin() {
+    float salesRevenue = 30000000, profit = 9000000, profitMargin;
+    profitMargin = (profit / salesRevenue) * 100;
+    printf("Profit margin: %.2f%%\n", profitMargin);
+}
+
+int main() {
+    calculateProfitMargin();
+    return 0;
+}
+#10
+#include <stdio.h>
+
+void calculateDepreciation() {
+    float cost = 10000000, residualValue = 2000000, usefulLife = 5, depreciation;
+    depreciation = (cost - residualValue) / usefulLife;
+    printf("Annual Depreciation: UGX %.2f\n", depreciation);
+}
+
+int main() {
+    calculateDepreciation();
+    return 0;
+}
+#11
+#include <stdio.h>
+
+void printDiscountedPrice() {
+    float price = 200000, discount = 0.10, discountedPrice;
+    discountedPrice = price - (price * discount);
+    printf("Discounted price: UGX %.2f\n", discountedPrice);
+}
+
+int main() {
+    printDiscountedPrice();
+    return 0;
+}
+#12
+#include <stdio.h>
+
+void printTaxAmount() {
+    float price = 500000, taxRate = 0.15, taxAmount;
+    taxAmount = price * taxRate;
+    printf("Tax amount: UGX %.2f\n", taxAmount);
+}
+
+int main() {
+    printTaxAmount();
+    return 0;
+}
+#13
+#include <stdio.h>
+
+void printSalaryAfterBonus() {
+    float salary = 3000000, bonusPercentage = 0.10, totalSalary;
+    totalSalary = salary + (salary * bonusPercentage);
+    printf("Total salary after bonus: UGX %.2f\n", totalSalary);
+}
+
+int main() {
+    printSalaryAfterBonus();
+    return 0;
+}
+#14
+#include <stdio.h>
+
+void printProfitOrLoss() {
+    float sellingPrice = 1000000, costPrice = 800000;
+    if (sellingPrice > costPrice)
+        printf("Profit\n");
+    else
+        printf("Loss\n");
+}
+
+int main() {
+    printProfitOrLoss();
+    return 0;
+}
+#15
+#include <stdio.h>
+
+void printDiscountedPriceIfAbove20() {
+    float price = 300000, discount = 0.25, discountedPrice;
+    if (discount > 0.20) {
+        discountedPrice = price - (price * discount);
+        printf("Discounted price: UGX %.2f\n", discountedPrice);
+    }
+}
+
+int main() {
+    printDiscountedPriceIfAbove20();
+    return 0;
+}
+#16
+#include <stdio.h>
+#include <math.h>
+
+void printYearsToDoubleInvestment() {
+    float investment = 1000000, rateOfReturn = 0.08;
+    int years = log(2) / log(1 + rateOfReturn);
+    printf("It will take %d years to double the investment.\n", years);
+}
+
+int main() {
+    printYearsToDoubleInvestment();
+    return 0;
+}
+#17
+#include <stdio.h>
+
+void printTotalExpenses() {
+    int itemsSold = 100, pricePerItem = 2000, totalExpenses;
+    totalExpenses = itemsSold * pricePerItem;
+    printf("Total expenses: UGX %d\n", totalExpenses);
+}
+
+int main() {
+    printTotalExpenses();
+    return 0;
+}
+#18
+#include <stdio.h>
+
+void printTaxPercentageBasedOnSalary() {
+    float salary = 4000000;
+    if (salary < 3000000)
+        printf("Tax rate: 10%%\n");
+    else if (salary >= 3000000 && salary <= 7000000)
+        printf("Tax rate: 15%%\n");
+    else
+        printf("Tax rate: 20%%\n");
+}
+
+int main() {
+    printTaxPercentageBasedOnSalary();
+    return 0;
+}
+#19
+#include <stdio.h>
+
+void printOverdueFees() {
+    int daysOverdue = 5;
+    float dailyFee = 2000, totalFee;
+    totalFee = daysOverdue * dailyFee;
+    printf("Total overdue fee: UGX %.2f\n", totalFee);
+}
+
+int main() {
+    printOverdueFees();
+    return 0;
+}
+#20
+#include <stdio.h>
+
+void printMaxDiscount() {
+    float price = 500000, discountPercentage = 0.20, maxDiscount;
+    maxDiscount = price * discountPercentage;
+    printf("Maximum discount: UGX %.2f\n", maxDiscount);
+}
+
+int main() {
+    printMaxDiscount();
+    return 0;
+}
+
