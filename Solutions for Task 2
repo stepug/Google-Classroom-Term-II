@@ -1,0 +1,62 @@
+#include <stdio.h>
+
+// Global constants
+#define USD_RATE 3500.0
+#define TAX_RATE 0.18
+#define DISCOUNT_PERCENTAGE 0.10
+#define BONUS_PERCENTAGE 0.05
+#define INTEREST_RATE 0.08
+
+// Global variable (used in multiple functions)
+double result;
+
+// 1. Compute Simple Interest
+void computeSimpleInterest(double principal, int time) {
+    result = principal * time * INTEREST_RATE;
+    printf("1. Simple Interest:\n\tUGX %.2lf\n\n", result);
+}
+
+// 2. Compute Discounted Price
+void computeDiscountedPrice(double price) {
+    result = DISCOUNT_PERCENTAGE * price;
+    double discountedPrice = price - result;
+    printf("2. Discounted Price:\n\tUGX %.2lf (Discount: UGX %.2lf)\n\n", discountedPrice, result);
+}
+
+// 3. USD to UGX Conversion
+void computeUGXforUSD(double usdAmount) {
+    result = usdAmount * USD_RATE;
+    printf("3. Amount in UGX for %.0lf USD:\n\tUGX %.2lf\n\n", usdAmount, result);
+}
+
+// 4. Calculate Employee Bonus
+void computeEmployeeBonus(double salary) {
+    result = BONUS_PERCENTAGE * salary;
+    printf("4. Employee Bonus:\n\tUGX %.2lf\n\n", result);
+}
+
+// 5. Total Cost Including Tax
+void computeTotalCost(double price) {
+    result = TAX_RATE * price;
+    double totalCost = price + result;
+    printf("5. Total Cost (incl. Tax):\n\tUGX %.2lf (Tax: UGX %.2lf)\n", totalCost, result);
+}
+
+int main() {
+    // Local variables
+    double principal = 1000000;
+    int time = 2;
+    double productPrice = 250000;
+    double usdToBuy = 700;
+    double salary = 1200000;
+    double itemPrice = 500000;
+
+    // Function calls
+    computeSimpleInterest(principal, time);
+    computeDiscountedPrice(productPrice);
+    computeUGXforUSD(usdToBuy);
+    computeEmployeeBonus(salary);
+    computeTotalCost(itemPrice);
+
+    return 0;
+}
