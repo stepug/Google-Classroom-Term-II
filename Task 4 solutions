@@ -1,0 +1,169 @@
+#1.
+#include <stdio.h>
+
+int main() {
+    float amount, finalAmount;
+    printf("Enter total purchase amount: ");
+    scanf("%f", &amount);
+
+    if (amount > 1000)
+        finalAmount = amount * 0.9;
+    else
+        finalAmount = amount;
+
+    printf("Final amount: %.2f\n", finalAmount);
+    return 0;
+}
+#2
+#include <stdio.h>
+
+int main() {
+    float salary, finalSalary;
+    int years;
+
+    printf("Enter years of service: ");
+    scanf("%d", &years);
+    printf("Enter basic salary: ");
+    scanf("%f", &salary);
+
+    if (years > 5)
+        finalSalary = salary + (salary * 0.05);
+    else
+        finalSalary = salary;
+
+    printf("Final salary: %.2f\n", finalSalary);
+    return 0;
+}
+#3
+#include <stdio.h>
+
+int main() {
+    float salary;
+    int years;
+
+    printf("Enter salary: ");
+    scanf("%f", &salary);
+    printf("Enter years of employment: ");
+    scanf("%d", &years);
+
+    if (salary >= 5000 || years >= 2)
+        printf("Eligible for loan\n");
+    else
+        printf("Not eligible for loan\n");
+
+    return 0;
+}
+#4
+#include <stdio.h>
+
+int main() {
+    float amount, tax, total;
+
+    printf("Enter purchase amount: ");
+    scanf("%f", &amount);
+
+    if (amount < 500)
+        tax = amount * 0.05;
+    else
+        tax = amount * 0.08;
+
+    total = amount + tax;
+    printf("Total payable amount: %.2f\n", total);
+    return 0;
+}
+#5
+#include <stdio.h>
+
+int main() {
+    float hours, rate, salary;
+
+    printf("Enter hours worked: ");
+    scanf("%f", &hours);
+    printf("Enter hourly rate: ");
+    scanf("%f", &rate);
+
+    if (hours > 40)
+        salary = 40 * rate + (hours - 40) * rate * 1.5;
+    else
+        salary = hours * rate;
+
+    printf("Total salary: %.2f\n", salary);
+    return 0;
+}
+#6
+#include <stdio.h>
+
+int main() {
+    float cp, sp;
+
+    printf("Enter cost price: ");
+    scanf("%f", &cp);
+    printf("Enter selling price: ");
+    scanf("%f", &sp);
+
+    if (sp > cp)
+        printf("Profit: %.2f\n", sp - cp);
+    else if (sp < cp)
+        printf("Loss: %.2f\n", cp - sp);
+    else
+        printf("No profit or loss.\n");
+
+    return 0;
+}
+#7
+#include <stdio.h>
+
+int main() {
+    float amount, net;
+
+    printf("Enter withdrawal amount: ");
+    scanf("%f", &amount);
+
+    if (amount < 500)
+        net = amount - 10;
+    else
+        net = amount;
+
+    printf("Net amount received: %.2f\n", net);
+    return 0;
+}
+#8
+#include <stdio.h>
+
+int main() {
+    int units;
+    float bill;
+
+    printf("Enter number of units consumed: ");
+    scanf("%d", &units);
+
+    if (units < 200)
+        bill = units * 0.50;
+    else
+        bill = units * 0.75;
+
+    printf("Total bill: %.2f\n", bill);
+    return 0;
+}
+#9
+#include <stdio.h>
+
+int main() {
+    int years;
+    float fee, finalFee;
+
+    printf("Enter membership duration (years): ");
+    scanf("%d", &years);
+    printf("Enter total fee: ");
+    scanf("%f", &fee);
+
+    if (years >= 4)
+        finalFee = fee * 0.9;
+    else if (years >= 1)
+        finalFee = fee * 0.95;
+    else
+        finalFee = fee;
+
+    printf("Final fee to be paid: %.2f\n", finalFee);
+    return 0;
+}
