@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+int main() {
+    float total_sales, average_sales;
+    int days;
+
+    float sales_volume, commission_rate, commission;
+
+    float asset_cost, residual_value, depreciation;
+    int useful_life;
+
+    float hourly_wage, annual_salary;
+    int hours_per_week = 40, weeks_per_year = 52;
+
+    float customer1, customer2, customer3, total_revenue;
+
+    // 1. Average Sales Calculation
+    printf("Enter total sales (UGX): ");
+    scanf("%f", &total_sales);
+    printf("Enter number of days: ");
+    scanf("%d", &days);
+    average_sales = (float)total_sales / (float)days;
+    printf("1. Average Sales per day: UGX %.2f\n\n", average_sales);
+
+    // 2. Commission Calculation
+    printf("Enter sales volume (UGX): ");
+    scanf("%f", &sales_volume);
+    printf("Enter commission rate (e.g., 0.05 for 5%%): ");
+    scanf("%f", &commission_rate);
+    commission = (float)sales_volume * (float)commission_rate;
+    printf("2. Commission: UGX %.2f\n\n", commission);
+
+    // 3. Straight-Line Depreciation
+    printf("Enter asset cost (UGX): ");
+    scanf("%f", &asset_cost);
+    printf("Enter residual value (UGX): ");
+    scanf("%f", &residual_value);
+    printf("Enter useful life (in years): ");
+    scanf("%d", &useful_life);
+    depreciation = (float)(asset_cost - residual_value) / (float)useful_life;
+    printf("3. Annual Depreciation: UGX %.2f\n\n", depreciation);
+
+    // 4. Annual Salary Calculation
+    printf("Enter hourly wage (UGX): ");
+    scanf("%f", &hourly_wage);
+    annual_salary = (float)hourly_wage * (float)hours_per_week * (float)weeks_per_year;
+    printf("4. Annual Salary: UGX %.2f\n\n", annual_salary);
+
+    // 5. Total Revenue from Multiple Customers
+    printf("Enter amount spent by customer 1 (UGX): ");
+    scanf("%f", &customer1);
+    printf("Enter amount spent by customer 2 (UGX): ");
+    scanf("%f", &customer2);
+    printf("Enter amount spent by customer 3 (UGX): ");
+    scanf("%f", &customer3);
+    total_revenue = (float)(customer1 + customer2 + customer3);
+    printf("5. Total Revenue from Customers: UGX %.2f\n", total_revenue);
+
+    return 0;
+}
