@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    
+    int age = 20;
+    float height = 5.9f;
+    double distance = 12345.6789;
+    char initial = 'A';
+
+   
+    printf("Age: %d\n", age);           // %d for int
+    printf("Height: %f\n", height);     // %f for float
+    printf("Distance: %lf\n", distance); // %lf for double
+    printf("Initial: %c\n", initial);   // %c for char
+
+    return 0;
+}
